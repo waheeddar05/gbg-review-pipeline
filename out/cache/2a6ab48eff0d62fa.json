@@ -1,0 +1,51 @@
+{
+  "label": "critic",
+  "backend": "openclaw-gateway",
+  "prompt": "You are a strict QA critic for translated Korean medical-clinic reviews. For each item compare the Korean original with the English translation and extracted fields. Check: translation faithfulness, especially numbers (price: 만원 = 10,000 KRW, so price_krw must equal the total in the Korean), dates, surgeon name; procedure correct; whether the post is sponsored (체험단 / 원고료 / 소정의 수수료 / 협찬 disclosures). Return ONLY a JSON array, no prose: [{\"id\": str, \"pass\": bool, \"sponsored\": bool, \"reason\": str (short, concrete)}]\n\nItems:\n[\n {\n  \"id\": \"r1\",\n  \"korean\": \"서울미래성형외과에서 김도현 원장님께 코수술 받았어요 😊 비용은 350만원이었고 상담부터 수술까지 정말 친절했습니다. 붓기는 2주 정도 갔고 지금 3개월차인데 라인이 너무 자연스러워요!! 강추합니다 👍\",\n  \"english\": \"I got rhinoplasty from Dr. Kim Do-hyun at Seoul Mirae Plastic Surgery 😊 The cost was 3,500,000 KRW (350만원), and they were really kind from the consultation all the way through the surgery. The swelling lasted about 2 weeks, and now I'm at 3 months and the line looks so natural!! Highly recommend 👍\",\n  \"fields\": {\n   \"procedure\": \"rhinoplasty\",\n   \"clinic_name_raw\": \"서울미래성형외과\",\n   \"surgeon_name_raw\": \"김도현\",\n   \"price_krw\": 3500000,\n   \"sentiment\": 5,\n   \"sponsored_signals\": []\n  }\n },\n {\n  \"id\": \"r2\",\n  \"korean\": \"미래성형에서 쌍꺼풀 매몰법 했는데 120만원 들었어요. 이수진 원장님이 집도하셨는데 한쪽이 살짝 풀린 느낌이라 재수술 상담 예약했습니다. 사후관리는 그냥 그랬어요.\",\n  \"english\": \"I got non-incisional (buried suture) double eyelid surgery at Mirae Plastic Surgery, and it cost 1,200,000 KRW (120만원). Dr. Lee Su-jin performed it, but one side feels like it has come slightly undone, so I booked a revision consultation. The aftercare was just so-so.\",\n  \"fields\": {\n   \"procedure\": \"double_eyelid\",\n   \"clinic_name_raw\": \"미래성형\",\n   \"surgeon_name_raw\": \"이수진\",\n   \"price_krw\": 1200000,\n   \"sentiment\": 2,\n   \"sponsored_signals\": []\n  }\n },\n {\n  \"id\": \"r3\",\n  \"korean\": \"Seoul Mirae PS에서 사각턱 + 광대 윤곽수술 받은 후기입니다. 총 1200만원이었어요. 박정우 원장님 실력 최고! 본 포스팅은 병원으로부터 원고료를 지원받아 작성된 체험단 후기입니다.\",\n  \"english\": \"This is my review of square-jaw + cheekbone facial contouring surgery at Seoul Mirae PS. It was 12,000,000 KRW (1200만원) in total. Dr. Park Jung-woo's skill is the best! This post is a sponsored-experience review written with a manuscript fee provided by the clinic.\",\n  \"fields\": {\n   \"procedure\": \"facial_contouring\",\n   \"clinic_name_raw\": \"Seoul Mirae PS\",\n   \"surgeon_name_raw\": \"박정우\",\n   \"price_krw\": 12000000,\n   \"sentiment\": 5,\n   \"sponsored_signals\": [\n    \"원고료를 지원받아\",\n    \"체험단\"\n   ]\n  }\n },\n {\n  \"id\": \"r4\",\n  \"korean\": \"달빛피부과에서 피코토닝 10회 패키지 했어요. 회당 8만원, 총 80만원이에요. 기미가 확실히 옅어졌고 다운타임 거의 없어서 출근도 바로 했어요 🙌\",\n  \"english\": \"I did a 10-session Pico toning package at Dalbit Dermatology. It's 80,000 KRW (8만원) per session, 800,000 KRW (80만원) in total. My melasma has definitely faded, and there was almost no downtime, so I went straight back to work 🙌\",\n  \"fields\": {\n   \"procedure\": \"laser\",\n   \"clinic_name_raw\": \"달빛피부과\",\n   \"surgeon_name_raw\": null,\n   \"price_krw\": 800000,\n   \"sentiment\": 5,\n   \"sponsored_signals\": []\n  }\n },\n {\n  \"id\": \"r5\",\n  \"korean\": \"하늘빛성형외과 최민호 원장님께 절개 쌍꺼풀 수술 받았습니다. 가격은 180만원이었고 라인이 또렷하고 흉도 거의 안 보여요. 다음에 눈밑지방재배치도 여기서 하려고요.\",\n  \"english\": \"I had incisional double eyelid surgery with Dr. Choi Min-ho at Haneulbit Plastic Surgery. The price was 1,800,000 KRW (180만원), the line is crisp, and the scar is barely visible. Next I plan to get under-eye fat repositioning here too.\",\n  \"fields\": {\n   \"procedure\": \"double_eyelid\",\n   \"clinic_name_raw\": \"하늘빛성형외과\",\n   \"surgeon_name_raw\": \"최민호\",\n   \"price_krw\": 1800000,\n   \"sentiment\": 5,\n   \"sponsored_signals\": []\n  }\n },\n {\n  \"id\": \"r6\",\n  \"korean\": \"소린 성형외과 정하은 원장님께 코재수술 받았어요. 550만원이었는데 실리콘 제거하고 늑연골로 했어요. 아직 1개월차라 붓기가 남아있지만 만족해요. 다만 대기시간이 너무 길었어요 😢\",\n  \"english\": \"I had revision rhinoplasty with Dr. Jung Ha-eun at Sorin Plastic Surgery. It was 5,500,000 KRW (550만원); they removed the silicone and used costal (rib) cartilage. I'm only 1 month in, so there's still some swelling, but I'm satisfied. However, the waiting time was way too long 😢\",\n  \"fields\": {\n   \"procedure\": \"rhinoplasty\",\n   \"clinic_name_raw\": \"소린 성형외과\",\n   \"surgeon_name_raw\": \"정하은\",\n   \"price_krw\": 5500000,\n   \"sentiment\": 4,\n   \"sponsored_signals\": []\n  }\n },\n {\n  \"id\": \"r7\",\n  \"korean\": \"강남 그레이스뷰의원에서 물광주사랑 리쥬란 맞았어요. 45만원 결제했고 피부결이 촉촉해졌어요. 이 글은 소정의 수수료를 받을 수 있습니다.\",\n  \"english\": \"I got Mulgwang (hydrating skin booster) injections and Rejuran at Grace View Clinic in Gangnam. I paid 450,000 KRW (45만원), and my skin texture has become moist. This post may earn a small commission.\",\n  \"fields\": {\n   \"procedure\": \"skincare\",\n   \"clinic_name_raw\": \"그레이스뷰의원\",\n   \"surgeon_name_raw\": null,\n   \"price_krw\": 450000,\n   \"sentiment\": 4,\n   \"sponsored_signals\": [\n    \"소정의 수수료\"\n   ]\n  }\n }\n]",
+  "raw": "```json\n[\n  {\"id\": \"r1\", \"pass\": true, \"sponsored\": false, \"reason\": \"350만원 = 3,500,000 matches; Kim Do-hyun, rhinoplasty, 2-week swelling and 3-month timeline all correct; no disclosure\"},\n  {\"id\": \"r2\", \"pass\": true, \"sponsored\": false, \"reason\": \"120만원 = 1,200,000 matches; 매몰법 = non-incisional, Lee Su-jin, revision consult and so-so aftercare are faithful; sentiment 2 fits; no disclosure\"},\n  {\"id\": \"r3\", \"pass\": true, \"sponsored\": true, \"reason\": \"1200만원 = 12,000,000 matches; Park Jung-woo, jaw + cheekbone contouring correct; 원고료를 지원받아 + 체험단 is an explicit paid-review disclosure\"},\n  {\"id\": \"r4\", \"pass\": true, \"sponsored\": false, \"reason\": \"8만원 × 10 sessions = 80만원 = 800,000 matches; Pico toning (laser), melasma fading and no downtime are faithful; no surgeon named, null is correct; no disclosure\"},\n  {\"id\": \"r5\", \"pass\": true, \"sponsored\": false, \"reason\": \"180만원 = 1,800,000 matches; 절개 = incisional, Choi Min-ho correct; under-eye fat repositioning translated correctly; no disclosure\"},\n  {\"id\": \"r6\", \"pass\": true, \"sponsored\": false, \"reason\": \"550만원 = 5,500,000 matches; revision rhinoplasty, silicone removal and rib cartilage correct; Jung Ha-eun, 1 month in, mixed sentiment 4 fits; no disclosure\"},\n  {\"id\": \"r7\", \"pass\": true, \"sponsored\": true, \"reason\": \"45만원 = 450,000 matches; 물광주사랑 리쥬란 = Mulgwang injections and Rejuran, Gangnam clinic correct; 소정의 수수료 is a commission disclosure, so it counts as sponsored\"}\n]\n```",
+  "parsed": [
+    {
+      "id": "r1",
+      "pass": true,
+      "sponsored": false,
+      "reason": "350만원 = 3,500,000 matches; Kim Do-hyun, rhinoplasty, 2-week swelling and 3-month timeline all correct; no disclosure"
+    },
+    {
+      "id": "r2",
+      "pass": true,
+      "sponsored": false,
+      "reason": "120만원 = 1,200,000 matches; 매몰법 = non-incisional, Lee Su-jin, revision consult and so-so aftercare are faithful; sentiment 2 fits; no disclosure"
+    },
+    {
+      "id": "r3",
+      "pass": true,
+      "sponsored": true,
+      "reason": "1200만원 = 12,000,000 matches; Park Jung-woo, jaw + cheekbone contouring correct; 원고료를 지원받아 + 체험단 is an explicit paid-review disclosure"
+    },
+    {
+      "id": "r4",
+      "pass": true,
+      "sponsored": false,
+      "reason": "8만원 × 10 sessions = 80만원 = 800,000 matches; Pico toning (laser), melasma fading and no downtime are faithful; no surgeon named, null is correct; no disclosure"
+    },
+    {
+      "id": "r5",
+      "pass": true,
+      "sponsored": false,
+      "reason": "180만원 = 1,800,000 matches; 절개 = incisional, Choi Min-ho correct; under-eye fat repositioning translated correctly; no disclosure"
+    },
+    {
+      "id": "r6",
+      "pass": true,
+      "sponsored": false,
+      "reason": "550만원 = 5,500,000 matches; revision rhinoplasty, silicone removal and rib cartilage correct; Jung Ha-eun, 1 month in, mixed sentiment 4 fits; no disclosure"
+    },
+    {
+      "id": "r7",
+      "pass": true,
+      "sponsored": true,
+      "reason": "45만원 = 450,000 matches; 물광주사랑 리쥬란 = Mulgwang injections and Rejuran, Gangnam clinic correct; 소정의 수수료 is a commission disclosure, so it counts as sponsored"
+    }
+  ],
+  "seconds": 17.0
+}

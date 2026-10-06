@@ -1,0 +1,10 @@
+{
+  "label": "clinic-tiebreak",
+  "backend": "openclaw-gateway",
+  "prompt": "Map each raw clinic name to a clinic id from this registry, or \"UNKNOWN\" if it is not clearly the same clinic. Never invent ids. Return ONLY a JSON object {raw_name: id_or_UNKNOWN}.\nRegistry:\n[{\"id\": \"mirae\", \"name_ko\": \"서울미래성형외과\", \"name_en\": \"Seoul Mirae Plastic Surgery\", \"aliases\": [\"미래성형\", \"Seoul Mirae PS\", \"서울미래\"]}, {\"id\": \"haneul\", \"name_ko\": \"하늘빛성형외과\", \"name_en\": \"Haneulbit Plastic Surgery\", \"aliases\": [\"하늘빛\", \"Haneulbit PS\"]}, {\"id\": \"dalbit\", \"name_ko\": \"달빛피부과의원\", \"name_en\": \"Dalbit Dermatology Clinic\", \"aliases\": [\"달빛피부과\", \"Dalbit Derm\"]}, {\"id\": \"sorin\", \"name_ko\": \"소린성형외과\", \"name_en\": \"Sorin Aesthetic Surgery\", \"aliases\": [\"소린\", \"SORIN PS\"]}]\nRaw names:\n[\"그레이스뷰의원\"]",
+  "raw": "{\"그레이스뷰의원\": \"UNKNOWN\"}",
+  "parsed": {
+    "그레이스뷰의원": "UNKNOWN"
+  },
+  "seconds": 5.0
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "review_id": "r3",
+    "clinic_id": "mirae",
+    "clinic_name_en": "Seoul Mirae Plastic Surgery",
+    "procedure": "facial_contouring",
+    "surgeon": "박정우",
+    "price_krw": 12000000,
+    "sentiment": 5,
+    "translation_en": "This is my review of square-jaw + cheekbone facial contouring surgery at Seoul Mirae PS. It was 12,000,000 KRW (1200만원) in total. Dr. Park Jung-woo's skill is the best! This post is a sponsored-experience review written with a manuscript fee provided by the clinic.",
+    "text_ko": "Seoul Mirae PS에서 사각턱 + 광대 윤곽수술 받은 후기입니다. 총 1200만원이었어요. 박정우 원장님 실력 최고! 본 포스팅은 병원으로부터 원고료를 지원받아 작성된 체험단 후기입니다.",
+    "sources": [
+      {
+        "post_id": "p4",
+        "source": "blog.naver.com/glowup_seoul",
+        "url": "https://blog.naver.com/glowup_seoul/5521",
+        "posted_at": "2026-09-01"
+      }
+    ],
+    "trust_badges": [
+      "verified_surgeon",
+      "verified_procedure"
+    ],
+    "reasons": [
+      "sponsored disclosure: 원고료, 체험단"
+    ]
+  },
+  {
+    "review_id": "r7",
+    "clinic_id": null,
+    "clinic_name_en": null,
+    "procedure": "skincare",
+    "surgeon": null,
+    "price_krw": 450000,
+    "sentiment": 4,
+    "translation_en": "I got Mulgwang (hydrating skin booster) injections and Rejuran at Grace View Clinic in Gangnam. I paid 450,000 KRW (45만원), and my skin texture has become moist. This post may earn a small commission.",
+    "text_ko": "강남 그레이스뷰의원에서 물광주사랑 리쥬란 맞았어요. 45만원 결제했고 피부결이 촉촉해졌어요. 이 글은 소정의 수수료를 받을 수 있습니다.",
+    "sources": [
+      {
+        "post_id": "p8",
+        "source": "blog.naver.com/kbeauty_trip",
+        "url": "https://blog.naver.com/kbeauty_trip/339",
+        "posted_at": "2026-09-28"
+      }
+    ],
+    "trust_badges": [],
+    "reasons": [
+      "sponsored disclosure: 수수료",
+      "clinic not in registry: 그레이스뷰의원"
+    ]
+  }
+]

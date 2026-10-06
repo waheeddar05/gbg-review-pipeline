@@ -1,0 +1,124 @@
+[
+  {
+    "review_id": "r1",
+    "clinic_id": "mirae",
+    "clinic_name_en": "Seoul Mirae Plastic Surgery",
+    "procedure": "rhinoplasty",
+    "surgeon": "김도현",
+    "price_krw": 3500000,
+    "sentiment": 5,
+    "translation_en": "I got rhinoplasty from Dr. Kim Do-hyun at Seoul Mirae Plastic Surgery 😊 The cost was 3,500,000 KRW (350만원), and they were really kind from the consultation all the way through the surgery. The swelling lasted about 2 weeks, and now I'm at 3 months and the line looks so natural!! Highly recommend 👍",
+    "text_ko": "서울미래성형외과에서 김도현 원장님께 코수술 받았어요 😊 비용은 350만원이었고 상담부터 수술까지 정말 친절했습니다. 붓기는 2주 정도 갔고 지금 3개월차인데 라인이 너무 자연스러워요!! 강추합니다 👍",
+    "sources": [
+      {
+        "post_id": "p1",
+        "source": "cafe.naver.com/gangnamsurgery",
+        "url": "https://cafe.naver.com/gangnamsurgery/10231",
+        "posted_at": "2026-08-14"
+      },
+      {
+        "post_id": "p2",
+        "source": "blog.naver.com/minji_diary",
+        "url": "https://blog.naver.com/minji_diary/2231",
+        "posted_at": "2026-08-15",
+        "similarity": 1.0
+      }
+    ],
+    "trust_badges": [
+      "verified_surgeon",
+      "verified_procedure",
+      "multi_source"
+    ]
+  },
+  {
+    "review_id": "r2",
+    "clinic_id": "mirae",
+    "clinic_name_en": "Seoul Mirae Plastic Surgery",
+    "procedure": "double_eyelid",
+    "surgeon": "이수진",
+    "price_krw": 1200000,
+    "sentiment": 2,
+    "translation_en": "I got non-incisional (buried suture) double eyelid surgery at Mirae Plastic Surgery, and it cost 1,200,000 KRW (120만원). Dr. Lee Su-jin performed it, but one side feels like it has come slightly undone, so I booked a revision consultation. The aftercare was just so-so.",
+    "text_ko": "미래성형에서 쌍꺼풀 매몰법 했는데 120만원 들었어요. 이수진 원장님이 집도하셨는데 한쪽이 살짝 풀린 느낌이라 재수술 상담 예약했습니다. 사후관리는 그냥 그랬어요.",
+    "sources": [
+      {
+        "post_id": "p3",
+        "source": "daum.net/cafe/beautytalk",
+        "url": "https://cafe.daum.net/beautytalk/881",
+        "posted_at": "2026-07-02"
+      }
+    ],
+    "trust_badges": [
+      "verified_surgeon",
+      "verified_procedure"
+    ]
+  },
+  {
+    "review_id": "r4",
+    "clinic_id": "dalbit",
+    "clinic_name_en": "Dalbit Dermatology Clinic",
+    "procedure": "laser",
+    "surgeon": null,
+    "price_krw": 800000,
+    "sentiment": 5,
+    "translation_en": "I did a 10-session Pico toning package at Dalbit Dermatology. It's 80,000 KRW (8만원) per session, 800,000 KRW (80만원) in total. My melasma has definitely faded, and there was almost no downtime, so I went straight back to work 🙌",
+    "text_ko": "달빛피부과에서 피코토닝 10회 패키지 했어요. 회당 8만원, 총 80만원이에요. 기미가 확실히 옅어졌고 다운타임 거의 없어서 출근도 바로 했어요 🙌",
+    "sources": [
+      {
+        "post_id": "p5",
+        "source": "blog.naver.com/skin_lab_kr",
+        "url": "https://blog.naver.com/skin_lab_kr/772",
+        "posted_at": "2026-09-10"
+      }
+    ],
+    "trust_badges": [
+      "verified_procedure"
+    ]
+  },
+  {
+    "review_id": "r5",
+    "clinic_id": "haneul",
+    "clinic_name_en": "Haneulbit Plastic Surgery",
+    "procedure": "double_eyelid",
+    "surgeon": "최민호",
+    "price_krw": 1800000,
+    "sentiment": 5,
+    "translation_en": "I had incisional double eyelid surgery with Dr. Choi Min-ho at Haneulbit Plastic Surgery. The price was 1,800,000 KRW (180만원), the line is crisp, and the scar is barely visible. Next I plan to get under-eye fat repositioning here too.",
+    "text_ko": "하늘빛성형외과 최민호 원장님께 절개 쌍꺼풀 수술 받았습니다. 가격은 180만원이었고 라인이 또렷하고 흉도 거의 안 보여요. 다음에 눈밑지방재배치도 여기서 하려고요.",
+    "sources": [
+      {
+        "post_id": "p6",
+        "source": "haneulbit-ps.co.kr/review",
+        "url": "https://haneulbit-ps.co.kr/review/45",
+        "posted_at": "2026-06-20"
+      }
+    ],
+    "trust_badges": [
+      "verified_surgeon",
+      "verified_procedure"
+    ]
+  },
+  {
+    "review_id": "r6",
+    "clinic_id": "sorin",
+    "clinic_name_en": "Sorin Aesthetic Surgery",
+    "procedure": "rhinoplasty",
+    "surgeon": "정하은",
+    "price_krw": 5500000,
+    "sentiment": 4,
+    "translation_en": "I had revision rhinoplasty with Dr. Jung Ha-eun at Sorin Plastic Surgery. It was 5,500,000 KRW (550만원); they removed the silicone and used costal (rib) cartilage. I'm only 1 month in, so there's still some swelling, but I'm satisfied. However, the waiting time was way too long 😢",
+    "text_ko": "소린 성형외과 정하은 원장님께 코재수술 받았어요. 550만원이었는데 실리콘 제거하고 늑연골로 했어요. 아직 1개월차라 붓기가 남아있지만 만족해요. 다만 대기시간이 너무 길었어요 😢",
+    "sources": [
+      {
+        "post_id": "p7",
+        "source": "cafe.naver.com/gangnamsurgery",
+        "url": "https://cafe.naver.com/gangnamsurgery/10577",
+        "posted_at": "2026-09-22"
+      }
+    ],
+    "trust_badges": [
+      "verified_surgeon",
+      "verified_procedure"
+    ]
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "review_id": "r1",
+    "text_ko": "서울미래성형외과에서 김도현 원장님께 코수술 받았어요 😊 비용은 350만원이었고 상담부터 수술까지 정말 친절했습니다. 붓기는 2주 정도 갔고 지금 3개월차인데 라인이 너무 자연스러워요!! 강추합니다 👍",
+    "extracted": {
+      "id": "p1",
+      "translation_en": "I got rhinoplasty from Dr. Kim Do-hyun at Seoul Mirae Plastic Surgery 😊 The cost was 3,500,000 KRW (350만원), and they were really kind from the consultation all the way through the surgery. The swelling lasted about 2 weeks, and now I'm at 3 months and the line looks so natural!! Highly recommend 👍",
+      "procedure": "rhinoplasty",
+      "clinic_name_raw": "서울미래성형외과",
+      "surgeon_name_raw": "김도현",
+      "price_krw": 3500000,
+      "sentiment": 5,
+      "sponsored_signals": []
+    },
+    "clinic_id": "mirae",
+    "clinic_match": "deterministic",
+    "sources": [
+      {
+        "post_id": "p1",
+        "source": "cafe.naver.com/gangnamsurgery",
+        "url": "https://cafe.naver.com/gangnamsurgery/10231",
+        "posted_at": "2026-08-14"
+      },
+      {
+        "post_id": "p2",
+        "source": "blog.naver.com/minji_diary",
+        "url": "https://blog.naver.com/minji_diary/2231",
+        "posted_at": "2026-08-15",
+        "similarity": 1.0
+      }
+    ]
+  },
+  {
+    "review_id": "r2",
+    "text_ko": "미래성형에서 쌍꺼풀 매몰법 했는데 120만원 들었어요. 이수진 원장님이 집도하셨는데 한쪽이 살짝 풀린 느낌이라 재수술 상담 예약했습니다. 사후관리는 그냥 그랬어요.",
+    "extracted": {
+      "id": "p3",
+      "translation_en": "I got non-incisional (buried suture) double eyelid surgery at Mirae Plastic Surgery, and it cost 1,200,000 KRW (120만원). Dr. Lee Su-jin performed it, but one side feels like it has come slightly undone, so I booked a revision consultation. The aftercare was just so-so.",
+      "procedure": "double_eyelid",
+      "clinic_name_raw": "미래성형",
+      "surgeon_name_raw": "이수진",
+      "price_krw": 1200000,
+      "sentiment": 2,
+      "sponsored_signals": []
+    },
+    "clinic_id": "mirae",
+    "clinic_match": "deterministic",
+    "sources": [
+      {
+        "post_id": "p3",
+        "source": "daum.net/cafe/beautytalk",
+        "url": "https://cafe.daum.net/beautytalk/881",
+        "posted_at": "2026-07-02"
+      }
+    ]
+  },
+  {
+    "review_id": "r3",
+    "text_ko": "Seoul Mirae PS에서 사각턱 + 광대 윤곽수술 받은 후기입니다. 총 1200만원이었어요. 박정우 원장님 실력 최고! 본 포스팅은 병원으로부터 원고료를 지원받아 작성된 체험단 후기입니다.",
+    "extracted": {
+      "id": "p4",
+      "translation_en": "This is my review of square-jaw + cheekbone facial contouring surgery at Seoul Mirae PS. It was 12,000,000 KRW (1200만원) in total. Dr. Park Jung-woo's skill is the best! This post is a sponsored-experience review written with a manuscript fee provided by the clinic.",
+      "procedure": "facial_contouring",
+      "clinic_name_raw": "Seoul Mirae PS",
+      "surgeon_name_raw": "박정우",
+      "price_krw": 12000000,
+      "sentiment": 5,
+      "sponsored_signals": [
+        "원고료를 지원받아",
+        "체험단"
+      ]
+    },
+    "clinic_id": "mirae",
+    "clinic_match": "deterministic",
+    "sources": [
+      {
+        "post_id": "p4",
+        "source": "blog.naver.com/glowup_seoul",
+        "url": "https://blog.naver.com/glowup_seoul/5521",
+        "posted_at": "2026-09-01"
+      }
+    ]
+  },
+  {
+    "review_id": "r4",
+    "text_ko": "달빛피부과에서 피코토닝 10회 패키지 했어요. 회당 8만원, 총 80만원이에요. 기미가 확실히 옅어졌고 다운타임 거의 없어서 출근도 바로 했어요 🙌",
+    "extracted": {
+      "id": "p5",
+      "translation_en": "I did a 10-session Pico toning package at Dalbit Dermatology. It's 80,000 KRW (8만원) per session, 800,000 KRW (80만원) in total. My melasma has definitely faded, and there was almost no downtime, so I went straight back to work 🙌",
+      "procedure": "laser",
+      "clinic_name_raw": "달빛피부과",
+      "surgeon_name_raw": null,
+      "price_krw": 800000,
+      "sentiment": 5,
+      "sponsored_signals": []
+    },
+    "clinic_id": "dalbit",
+    "clinic_match": "deterministic",
+    "sources": [
+      {
+        "post_id": "p5",
+        "source": "blog.naver.com/skin_lab_kr",
+        "url": "https://blog.naver.com/skin_lab_kr/772",
+        "posted_at": "2026-09-10"
+      }
+    ]
+  },
+  {
+    "review_id": "r5",
+    "text_ko": "하늘빛성형외과 최민호 원장님께 절개 쌍꺼풀 수술 받았습니다. 가격은 180만원이었고 라인이 또렷하고 흉도 거의 안 보여요. 다음에 눈밑지방재배치도 여기서 하려고요.",
+    "extracted": {
+      "id": "p6",
+      "translation_en": "I had incisional double eyelid surgery with Dr. Choi Min-ho at Haneulbit Plastic Surgery. The price was 1,800,000 KRW (180만원), the line is crisp, and the scar is barely visible. Next I plan to get under-eye fat repositioning here too.",
+      "procedure": "double_eyelid",
+      "clinic_name_raw": "하늘빛성형외과",
+      "surgeon_name_raw": "최민호",
+      "price_krw": 1800000,
+      "sentiment": 5,
+      "sponsored_signals": []
+    },
+    "clinic_id": "haneul",
+    "clinic_match": "deterministic",
+    "sources": [
+      {
+        "post_id": "p6",
+        "source": "haneulbit-ps.co.kr/review",
+        "url": "https://haneulbit-ps.co.kr/review/45",
+        "posted_at": "2026-06-20"
+      }
+    ]
+  },
+  {
+    "review_id": "r6",
+    "text_ko": "소린 성형외과 정하은 원장님께 코재수술 받았어요. 550만원이었는데 실리콘 제거하고 늑연골로 했어요. 아직 1개월차라 붓기가 남아있지만 만족해요. 다만 대기시간이 너무 길었어요 😢",
+    "extracted": {
+      "id": "p7",
+      "translation_en": "I had revision rhinoplasty with Dr. Jung Ha-eun at Sorin Plastic Surgery. It was 5,500,000 KRW (550만원); they removed the silicone and used costal (rib) cartilage. I'm only 1 month in, so there's still some swelling, but I'm satisfied. However, the waiting time was way too long 😢",
+      "procedure": "rhinoplasty",
+      "clinic_name_raw": "소린 성형외과",
+      "surgeon_name_raw": "정하은",
+      "price_krw": 5500000,
+      "sentiment": 4,
+      "sponsored_signals": []
+    },
+    "clinic_id": "sorin",
+    "clinic_match": "deterministic",
+    "sources": [
+      {
+        "post_id": "p7",
+        "source": "cafe.naver.com/gangnamsurgery",
+        "url": "https://cafe.naver.com/gangnamsurgery/10577",
+        "posted_at": "2026-09-22"
+      }
+    ]
+  },
+  {
+    "review_id": "r7",
+    "text_ko": "강남 그레이스뷰의원에서 물광주사랑 리쥬란 맞았어요. 45만원 결제했고 피부결이 촉촉해졌어요. 이 글은 소정의 수수료를 받을 수 있습니다.",
+    "extracted": {
+      "id": "p8",
+      "translation_en": "I got Mulgwang (hydrating skin booster) injections and Rejuran at Grace View Clinic in Gangnam. I paid 450,000 KRW (45만원), and my skin texture has become moist. This post may earn a small commission.",
+      "procedure": "skincare",
+      "clinic_name_raw": "그레이스뷰의원",
+      "surgeon_name_raw": null,
+      "price_krw": 450000,
+      "sentiment": 4,
+      "sponsored_signals": [
+        "소정의 수수료"
+      ]
+    },
+    "clinic_id": null,
+    "clinic_match": "llm_unknown",
+    "sources": [
+      {
+        "post_id": "p8",
+        "source": "blog.naver.com/kbeauty_trip",
+        "url": "https://blog.naver.com/kbeauty_trip/339",
+        "posted_at": "2026-09-28"
+      }
+    ]
+  }
+]
